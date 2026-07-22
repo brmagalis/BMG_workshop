@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>README</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+  body {
+    padding: 2cm; 
+  }
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">INTRODUCTION TO BIOCHEMISTRY &amp; MOLECULAR GENETICS WORKSHOP</h1>
+
+<h2 id="toc_1">Background</h2>
+
+<p>The COVID-19 pandemic has hit its 1.5-year mark, and you&#39;ve been aiding in sequencing SARS-CoV-2 from locally collected nasal swabs to monitor for trends in spread and new mutations. You&#39;ve noticed a mutation in the Spike protein that has arisen multiple times among sampled individuals who are reportedly not related via household transmission, and you are interested in what it might mean. Work through the following steps - including <a href="#Download">downloading additional data (Part 1)</a>, <a href="#Phylogeny">phylogenetic reconstruction (Part 2)</a>, and <a href="#PDB">protein structure visualization (Part 3)</a> - to reveal the potential impacts of the mutation on infectivity and transmission that would lead you to an hypothesis-driven research project in your lab!</p>
+
+<p>But first, you will be required to download the following tools:</p>
+
+<ul>
+<li><a href="https://www.barebones.com/products/bbedit/index.html">BBEdit</a> OR <a href="https://notepad-plus-plus.org/">Notepad++</a></li>
+<li><a href="https://ormbunkar.se/aliview/">Aliview</a></li>
+<li><a href="https://iqtree.github.io/#download">IQ-TREE</a></li>
+<li><a href="https://nam11.safelinks.protection.outlook.com/?url=https%3A%2F%2Fpymol.org%2Fep&amp;data=05%7C02%7Cbrittany.magalis%40louisville.edu%7Cb7999d020e3047aaa27d08dedd354e00%7Cdd246e4a54344e158ae391ad9797b209%7C0%7C0%7C639191418228124160%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=AsiQ5gr0WipMXGSELmlRfusbZtdkEbvTqLCSlHqFTd8%3D&amp;reserved=0">PyMOL</a> (USERNAME: jun2021 PASSWORD: betabarrel).<br></li>
+</ul>
+
+<p><br>
+<a name="Download"></a></p>
+
+<h2 id="toc_2">Part 1. Download, visualization, and phylogenetic analysis of DNA sequence data.</h2>
+
+<p>While you have local whole-genome SARS-CoV-2 sequence data, you are also interested in whether this mutation is present among regional, national, or even international cases. There are many databases to choose from when downloading sequence data, particularly for SARS-CoV-2. These include the <a href="https://www.ncbi.nlm.nih.gov/datasets/taxonomy/2697049/">National Center for Biotechnology Information (NCBI)</a>, the <a href="GISAID.org">Global Initiative on Sharing All Influenza Data (GISAID)</a>, or from groups that combine data from different databases and data sources such as <a href="nextstrain.org">Nextstrain</a>. The latter are useful if maintained and often provide metadata - including geographical location of sampling, time of sample collection, etc. - that are useful in downstream analysis. As the current COVID-19 sequence datasets are too large for analysis on a standard PC/laptop, we will be downloading data from a public <a href="https://github.com/brmagalis/BMG_workshop">Github data repository</a>. Github is also useful for individual users or small groups that wish to share data and/or developed code. </p>
+
+<p><br></p>
+
+<h3 id="toc_3">Step 1. To download the sequence data, as well as all of the rest of the material for the workshop, go to the Github repository using the link provided and click on the green &quot;Code&quot; button to Download everything as a compressed (zip) object:</h3>
+
+<div style="text-align:center;">
+<img src="./tutorial_figures/github_download.png" alt="Fig1" width="400" style="display:block;margin:auto;">
+<p>Figure 1. How to download an entire Github repository as a compressed object.</p>
+</div>
+
+<p><br></p>
+
+<h3 id="toc_4">Step 2. Move this zip file to an easy-to-access location (e.g., Desktop) and de-compress (&quot;unzip&quot;).</h3>
+
+<p>You should now see a folder entitled,<code>BMG_workshop-main</code>. Enter this folder and unzip also the object entitled, <code>data.zip</code>.</p>
+
+<p><br></p>
+
+<h3 id="toc_5">Step 3. Ensure sequences are aligned properly.</h3>
+
+<p>Genetic/genomic data is often stored in a FASTA format, which looks like below if you were to open it in a text-editing tool (e.g., BBEdit or Notepad++):</p>
+
+<div style="text-align:center;">
+<img src="./tutorial_figures/fasta.png" alt="Fig2" width="700" style="display:block;margin:auto;">
+<p>Figure 2. FASTA file when viewed in text-editing tool BBEdit.</p>
+</div>
+
+<p>SARS-CoV-2 sequences must be aligned in order to be certain that identified changes at individual sites are the result of mutation and not error. While we are not covering multiple sequence alignments today, we can still take a look at the already aligned sequences to look for anything unexpected. You can open the <code>tardis.aln</code> file in the &quot;data&quot; folder in the tool Aliview, which should look similar to the following where each nucleotide is given a distinct color for easy visualization:</p>
+
+<div style="text-align:center;">
+<img src="./tutorial_figures/aliview.png" alt="Fig3" width="700" style="display:block;margin:auto;">
+<p>Figure 3. FASTA file when viewed in Aliview.</p>
+</div>
+
+<h4 id="toc_6"><p style="color: red;">Does your alignmnent file truly look aligned? </p></h4>
+
+<p>If not, try to see if you can properly move sequences around (HINT: try using the <kbd class="kbc-button">space</kbd> bar.</p>  
+
+<p>Now save this alignment as <code>tardis_corrected.aln</code>.</p>
+
+<p><br></p>
+
+<h3 id="toc_7">Step 4. In Aliview, scroll over to nucleotide position 23063.</h3>
+
+<p>This is your mutation of interest!</p>
+
+<p><br></p>
+
+<h3 id="toc_8">Step 5. To see if this mutation is non-synonymous, or results in an amino acid change, click on the icon at the top left that stands for &quot;Translate nucleotide sequence to Amino Acids.&quot;</h3>
+
+<p>This icon should appear as follows:</p>
+
+<div style="text-align:center;">
+<img src="./tutorial_figures/translate.png" alt="Fig4" width="100" style="display:block;margin:auto;">
+<p>Figure 4. Icon for translating nucleotides to amino acids in Aliview.</p>
+</div>
+
+<p>This will color nucleotides according to codon. Unfortunately, this part of the alignment is in the wrong reading frame. </p>
+
+<p><br></p>
+
+<h3 id="toc_9">Step 6. To change the frame, toggle the &quot;Reading frame&quot; option at the top.</h3>
+
+<p>We just so happen to know that we need to switch to Frame 3 in this region, but if you&#39;re ever uncertain, the easiest thing to look for is the presence of stop codons (for protein-coding sequences). You should now see codons colored similarly to the following:</p>
+
+<div style="text-align:center;">
+<img src="./tutorial_figures/codon.png" alt="Fig5" width="400" style="display:block;margin:auto;">
+<p>Figure 5. Codon color-coding in Aliview.</p>
+</div>
+
+<p><br></p>
+
+<h3 id="toc_10">Step 7. Visualize the change at the amino acid level.</h3>
+
+<p>Now click on the icon for  &quot;Show translation as only one character amino acid&quot; at the top, which looks like the following: </p>
+
+<div style="text-align:center;">
+<img src="./tutorial_figures/one-character.png" alt="Fig6" width="100" style="display:block;margin:auto;">
+<p>Figure 6. Icon for amino acid translation in Aliview.</p>
+</div>
+
+<p>You should now see your amino acid change, as follows:</p>
+
+<div style="text-align:center;">
+<img src="./tutorial_figures/amino_acid.png" alt="Fig7" width="400" style="display:block;margin:auto;">
+<p>Figure 7. N501Y mutation visualized in Aliview.</p>
+</div>
+
+<p>Now remember, these are whole genomes, so the amino acid numbering (7689) is different from the Spike protein (501).</p>
+
+<p><br>
+<a name="Phylogeny"></a></p>
+
+<h3 id="toc_11">Part2. Reconstruct a phylogenetic tree</h3>
+
+<h3 id="toc_12">Step 8. Build the tree</h3>
+
+<p>Open your terminal or command prompt and first change directories (<code>cd</code>) so that you are within the folder containing the alignment. For example, I would type:</p>
+
+<div><pre><code class="language-none">cd ~/Desktop/BMG_workshop-main/data</code></pre></div>
+
+<p>When you downloaded IQ-TREE, the executable was installed, but in order to run it you will have to add the path to this executable to what is known as your PATH variable. To see what paths are currently in your path variable, you can type:</p>
+
+<div><pre><code class="language-none">echo $PATH </code></pre></div>
+
+<p>For example, my IQ-TREE executable is located in <code>/Applications/iqtree-3.0.0-macOS/bin</code>. To add this path to my PATH variable, I would type as below. <strong>It is imperative that you type everything else as is because you do not want to replace existing locations in your PATH variable.</strong></p>
+
+<div><pre><code class="language-none">export PATH=&quot;/Applications/iqtree-3.0.0-macOS/bin:$PATH&quot;</code></pre></div>
+
+<p>To see all of the commands and arguments available in IQ-TREE, you can type <code>iqtree3 -h</code>.</p>
+
+<p>To begin a fast tree search for your corrected alignment, type the following:</p>
+
+<div><pre><code class="language-none">iqtree3 -s tardis_corrected.aln --fast --model GTR+F+I+G4</code></pre></div>
+
+<p>This command specifies the use of an evolutionary model (GTR+F+I+G4) for a fast search for the maximum likelihood tree. <strong>Though we will not discuss evolutionary models or tree reconstruction methods, it is important to remember that what you choose here is highly data-dependent and should not be used as one-size-fits-all criteria in phylogenetics.</strong></p>
+
+<p>You should now see a log printing to your screen, as well as to a <code>.log</code> file within the folder. Additional files with run information will also be generated, which we will not discuss today.</p>
+
+<p><br></p>
+
+<h3 id="toc_13">Step 9. Map mutations and patient metadata to tree</h3>
+
+<p>Once you see that the <code>.treefile</code> has been generated in your data folder, open your terminal or command prompt again and run the Rscript in the main (<code>../</code>) folder using the following command:</p>
+
+<div><pre><code class="language-none">Rscript ../SC2_N501Y.R</code></pre></div>
+
+<p>Assuming you have the correctly named tree file and alignment, this R code will automatically generate the file <code>tree_plot.png</code> in your data folder, which should look like below:</p>
+
+<div style="text-align:center;">
+<img src="./tutorial_figures/tree_plot.png" alt="Fig7" width="800" style="display:block;margin:auto;">
+<p>Figure 8. Tree with branches annotated according to WHO variant classification, geographical sampling origin, and N501Y mutation classification.</p>
+</div>
+
+<p>In this tree, external branches, or leaves, represent sequences from your alignment, with relationships represented by internal branches. The sampling origin and variant information are provided in the <code>tardis_metadata.csv</code> file, whereas the N501Y mutation annotation is assigned in the R code using the alignment in your folder.</p>
+
+<h4 id="toc_14"><p style="color: red;">What can you say about the emergence of the N501Y mutation? </p></h4>
+
+<p><br>
+<a name="PDB"></a></p>
+
+<h2 id="toc_15">Part 3. Visualize the mutation in the protein structure</h2>
+
+<h3 id="toc_16">Step 10. Download the crystal structure from the Protein Data Bank, or PDB.</h3>
+
+<p>We will be downloading the file containing the crystal structure <code>6M0J</code> from the (PDB website)[https://www.rcsb.org/], which I encourage you to explore. The 6M0J structure is highly cited, as it was one of the first deposited during the pandemic and depicts the interaction between the Spike receptor-binding domain (RBD) and its target - ACE2 - at 2.45 Angstrom resolution. You can find related information to this structure by searching for the structure within the PDB, as follows:</p>
+
+<div style="text-align:center;">
+<img src="./tutorial_figures/PDB_search.png" alt="Fig7" width="800" style="display:block;margin:auto;">
+<p>Figure 9. Searching the PDB for the original crystal structure of the SARS-CoV-2 spike protein.</p>
+</div>
+
+<p><br></p>
+
+<h3 id="toc_17">Step 11. Fetch your PDB file in PyMol</h3>
+
+<p>Open the PyMol viewing window. You can type commands directly in the bottom terminal, which is what we are going to do today. There should already be a blinking cursor ready for commands.</p>
+
+<p>In your PyMol terminal, first change directories so that you are in your main folder. For me, that would be</p>
+
+<div><pre><code class="language-none">cd ~/Desktop/BMG_workshop-main
+</code></pre></div>
+
+<p>Next, fetch the PDB file directory from the PDB database:</p>
+
+<div><pre><code class="language-none">fetch 6M0J</code></pre></div>
+
+<p>Your PyMol viewing window should now show both bound structures as the same color, as below:</p>
+
+<div style="text-align:center;">
+<img src="./tutorial_figures/pymol_fetch.png" alt="Fig7" width="800" style="display:block;margin:auto;">
+<p>Figure 10. PyMol fetch function applied to PDB structure 6M0J.</p>
+</div>
+
+<p><br></p>
+
+<h3 id="toc_18">Step 12. Assign distinct colors to different PDB proteins</h3>
+
+<p>In this PDB, each protein is designated as a different &quot;chain&quot; (see PDB website for more information). Chain A refers to ACE2 and chain E to Spike. Type the following into your PyMol terminal to assign distinct colors for easier visualization:</p>
+
+<div><pre><code class="language-none">color salmon, chain A
+color lightblue, chain E</code></pre></div>
+
+<p>Now fetch the amino acid sequences for Spike and ACE2 separately by typing the following in your PyMol terminal. Note you can also do this from the beginning instead of fetching the bound structures.</p>
+
+<div><pre><code class="language-none">fetch 6M0J_E
+fetch 6M0J_A
+</code></pre></div>
+
+<p><br></p>
+
+<h3 id="toc_19">Step 13. Display amino acid sequences in PyMol</h3>
+
+<p>Now click on the Display option at the top of your screen, and select &quot;Sequence&quot;:</p>
+
+<div style="text-align:center;">
+<img src="./tutorial_figures/display_sequence.png" alt="Fig7" width="800" style="display:block;margin:auto;">
+<p>Figure 11. Displaying an amino acid sequence in PyMol.</p>
+</div>
+
+<p>Let&#39;s first make sure residue 501 in the sequence is an Asparagine (N). Scroll through the sequence using the scroll bar until you get to position 501, which sits right atop an &quot;N&quot;:</p>
+
+<div style="text-align:center;">
+<img src="./tutorial_figures/residue_501.png" alt="Fig7" width="800" style="display:block;margin:auto;">
+<p>Figure 12. Displaying an amino acid sequence in PyMol.</p>
+</div>
+
+<p><br></p>
+
+<h3 id="toc_20">Step 14. Highlight specific residues of interest.</h3>
+
+<p>Type the following in your PyMol terminal, which should highlight residue (&quot;resi&quot;) 501 in Spike and show side chains for 501 in &quot;stick&quot; form:</p>
+
+<div><pre><code class="language-none">select N501Y, resi 501 and chain E
+show sticks, N501Y</code></pre></div>
+
+<p>You can also color this residue differently using the following:</p>
+
+<div><pre><code class="language-none">color blue, N501Y</code></pre></div>
+
+<p>Zooming can be tricky in PyMol, so one trick to zoom in on specific residues is to use the zoom function in the terminal with a specified cutoff in number of Angstroms. Let&#39;s zoom in on residue 501 and view all potential interactions within 5 Angstroms:</p>
+
+<div><pre><code class="language-none">zoom N501Y, 5</code></pre></div>
+
+<h4 id="toc_21"><p style="color: red;">What do you think? Are there potential interactions that might be impacted by a mutation at this site? </p></h4>
+
+<p><br></p>
+
+<h3 id="toc_22">Step 15. Look for potential interacting residues.</h3>
+
+<p>Now visualize all individual residue side chains as &quot;sticks&quot; in the ACE2 structure to gain better insight into potential interactions:</p>
+
+<div><pre><code class="language-none">show sticks, chain A</code></pre></div>
+
+<p><strong>Note:</strong> At any time, if you don&#39;t like what you&#39;ve done you can type <code>undo</code> into the terminal. </p>
+
+<p>Now select individual residues that you believe might interact with residue 501 or be impacted by a change at this site. You can do this by selecting on the cartoon residue within the viewer window. You can then see what residue number this selection corresponds to by looking for the highlighted residue in the sequence above. For example, for sites Y41 and K353:</p>
+
+<div><pre><code class="language-none">select put_int, resi 41+353 and chain A
+select red, put_int</code></pre></div>
+
+<p>You can also see the distances between residues using the distance command. For this, you will have to have the specific residue numbers (instead of assigned names):</p>
+
+<div><pre><code class="language-none">distance put_int_dist, resi 41+353 and chain A, resi 501 and chain E</code></pre></div>
+
+<p>Yikes! This looks a bit messy, so let&#39;s set a cutoff of 4 Angstroms after deleting the previous distances:</p>
+
+<div><pre><code class="language-none">delete put_int_dist
+distance put_int_dist, resi 41+353 and chain A, resi 501 and chain E, 4</code></pre></div>
+
+<p>Now let&#39;s export, or &quot;ray&quot;, a high-quality image of your resulting interactions. For common image choices, see [CompChems(https://www.compchems.com/how-to-make-publication-quality-images-with-pymol/)</p>
+
+<div><pre><code class="language-none">bg_color white
+ray 2400,2400
+png interactions_501.png, dpi=300, width=13.2cm</code></pre></div>
+
+<p>Your figure should look something like this:</p>
+
+<div style="text-align:center;">
+<img src="./tutorial_figures/interactions_501.png" alt="Fig7" width="800" style="display:block;margin:auto;">
+<p>Figure 13. Example exported figure from PyMol demonstrating putative interactions (within 4 Angstroms) between Spike residue 501 and ACE2.</p>
+</div>
+
+<h3 id="toc_23">Congratulations! You have successfully gathered computational data to support further testing of the role of this mutation in infectivity and transmission. What&#39;s next?</h3>
+
+
+
+
+</body>
+
+</html>
