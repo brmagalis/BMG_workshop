@@ -15,7 +15,12 @@ lapply(.packages, require, character.only = TRUE)
 
 print("Reading in necessary files...")
 
-tree = read.beast("tardis.treefile")@phylo
+tree_file = list.files(pattern="treefile")
+if(length(tree_file)==0) {
+  tree= read.beast("../bake/tardis.treefile")@phylo
+} else {
+  tree=read.beast("tardis_corrected.aln.treefile")
+}
 
 if(length(tree)==0) {
   print("No tree file found. Make sure this script is run inside its original directory and that the 'step1' folder has been de-compressed.")
